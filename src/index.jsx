@@ -11,11 +11,18 @@ import Header from "./components/Header";
 import Error from "./components/Error";
 import Freelances from "./components/Freelances";
 import Results from "./components/Results";
+import {createGlobalStyle} from "styled-components";
 
+const GlobalStyle = createGlobalStyle`
+    div {
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+        <GlobalStyle/>
         <Header/>
         <Routes>
             <Route path='/' element={<Home/>}/>

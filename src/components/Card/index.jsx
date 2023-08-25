@@ -18,24 +18,27 @@ const CardTitle = styled.span`
 `
 
 const CardImage = styled.img`
-  height: 150px;
-  width: 150px;
+  margin: 2rem 0;
+  height: 200px;
+  width: 200px;
   align-self: center;
   border-radius: 50%;
 `
 
 const CardWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: ${colors.backgroundLight};
-    border-radius: 30px;
-    width: 350px;
-    transition: 200ms;
-    &:hover {
-        cursor: pointer;
-        box-shadow: 2px 2px 10px #e2e3e9;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: ${colors.backgroundLight};
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px #e9e9ec;
+  width: 350px;
+  transition: 200ms;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #e2e3e9;
+  }
 `
 
 function Card({ label, title, picture }) {
